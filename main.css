@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 100vh;
+  background-color: lightblue;
+  position: relative;
+}
+
+.nav-transparent {
+  background-color: transparent;
+}
+
+footer {
+  background-color: lightcoral;
+}
+
+nav {
+  text-align: center;
+  height: 60px;
+  width: 100%;
+  background-color: teal;
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: gradientBg 20s ease-in-out infinite;
+          animation: gradientBg 20s ease-in-out infinite;
+  font-size: 1em;
+}
+
+nav p {
+  margin: 20px 30px;
+  text-transform: uppercase;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: "Poiret One", cursive;
+  font-weight: 700;
+}
+
+.intro-text {
+  text-align: center;
+  font-size: 4em;
+  font-weight: 300;
+}
+
+.row2 {
+  font-size: 5em;
+  font-weight: 700;
+}
+
+.row3 {
+  font-size: 2em;
+}
+
+.portfolio {
+  width: 100%;
+}
+
+.portfolio-title {
+  width: 100%;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 2em;
+}
+
+.portfolio-gallery {
+  text-align: center;
+}
+
+.portfolio-category {
+  padding: 1em 0;
+  font-size: 1em;
+  display: inline-block;
+}
+
+.portfolio-category p {
+  margin: 0 20px;
+  cursor: pointer;
+  display: inline;
+}
+
+#portfolioItems {
+  width: 100%;
+  padding: 0 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.portfolio-item {
+  margin: 10px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  color: black;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+}
+
+.portfolio-item img {
+  height: 300px;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfolio-item__name {
+  font-size: 1.3em;
+  margin: 10px 0;
+}
+
+.portfolio-item__cat {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.enquire-chat {
+  background-color: pink;
+  color: #fff;
+  padding: 5rem 1rem;
+  margin-top: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-shadow: 0px 2px 4px #2e2e2e;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: gradientBg 20s ease-in-out infinite;
+          animation: gradientBg 20s ease-in-out infinite;
+}
+
+.enquire-chat h3 {
+  font-size: 1.5em;
+}
+
+.enquire-chat a {
+  font-size: 3em;
+  color: #fff;
+}
+
+@-webkit-keyframes gradientBg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradientBg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

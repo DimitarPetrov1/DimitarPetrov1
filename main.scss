@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+// font-family: "Poiret One", cursive;
+// font-family: 'Montserrat', sans-serif;
+
+$base-gradient: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+$margin-large: 3em;
+$margin-normal: 1em;
+$font-size: 1em;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 100vh;
+  background-color: lightblue;
+  position: relative;
+}
+
+.nav-transparent {
+  background-color: transparent;
+}
+
+footer {
+  background-color: lightcoral;
+}
+
+nav {
+  text-align: center;
+  height: 60px;
+  width: 100%;
+  background-color: teal;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $base-gradient;
+  background-size: 400% 400%;
+  animation: gradientBg 20s ease-in-out infinite;
+  font-size: $font-size;
+
+  p {
+    margin: 20px 30px;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+  }
+}
+
+.intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Poiret One", cursive;
+  font-weight: 700;
+}
+
+.intro-text {
+  text-align: center;
+  font-size: 4em;
+  font-weight: 300;
+}
+
+.row2 {
+  font-size: 5em;
+  font-weight: 700;
+}
+
+.row3 {
+  font-size: 2em;
+}
+
+// Portfolio
+.portfolio {
+  width: 100%;
+}
+
+.portfolio-title {
+  width: 100%;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 2em;
+}
+
+.portfolio-gallery {
+  text-align: center;
+}
+
+.portfolio-category {
+  padding: 1em 0;
+  font-size: 1em;
+  display: inline-block;
+  p {
+    margin: 0 20px;
+    cursor: pointer;
+    display: inline;
+  }
+}
+
+#portfolioItems {
+  width: 100%;
+  padding: 0 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: transparent;
+  user-select: none;
+}
+
+.portfolio-item {
+  margin: 10px;
+  transition: all 0.2s ease-out;
+  color: black;
+  user-select: text;
+
+  img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+  }
+}
+
+.portfolio-item__name {
+  font-size: $font-size + 0.3;
+  margin: 10px 0;
+}
+.portfolio-item__cat {
+  font-size: $font-size - 0.2;
+  font-weight: 300;
+}
+
+// Contacts
+.enquire-chat {
+  background-color: pink;
+  color: #fff;
+  padding: 5rem 1rem;
+
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-shadow: 0px 2px 4px rgb(46, 46, 46);
+
+  background: $base-gradient;
+
+  background-size: 400% 400%;
+  animation: gradientBg 20s ease-in-out infinite;
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  a {
+    font-size: 3em;
+    color: #fff;
+  }
+}
+
+@keyframes gradientBg {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

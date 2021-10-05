@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Webiste</title>
+    <script src=""></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <nav>
+          <p onclick="goTo('portfolio')">Portfolio</p>
+          <p onclick="goTo('contact')">contact</p>
+        </nav>
+
+        <div class="intro">
+          <p class="intro-text row1">Hello, I'm</p>
+          <p class="intro-text row2">Dimitar Petrov</p>
+          <p class="intro-text row3">and this is my portfolio</p>
+        </div>
+      </header>
+
+      <main>
+        <div class="portfolio">
+          <p class="portfolio-title">Featured Projects</p>
+
+          <div class="portfolio-gallery">
+            <div class="portfolio-category">
+              <p onclick="sortProjects('All')">All</p>
+              <p onclick="sortProjects('Javascript')">Javascript</p>
+              <p onclick="sortProjects('ReactJS')">ReactJS</p>
+              <!-- <p onclick="sortProjects('React Native')">React Native</p> -->
+            </div>
+            <div id="portfolioItems">
+              <!-- items go here -->
+            </div>
+          </div>
+        </div>
+        <dic class="contact">
+          <div class="enquire-chat">
+            <h3>Lookng to team up or to hire me?</h3>
+            <a
+              href="mailto:dimitarpetrov1990@gmail.com"
+              class="pulse enquire-msg"
+              >Get in touch</a
+            >
+          </div>
+        </dic>
+      </main>
+    </div>
+    <script defer src="./index.js"></script>
+  </body>
+</html>
