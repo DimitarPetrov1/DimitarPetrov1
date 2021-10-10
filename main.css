@@ -10,6 +10,10 @@
 html {
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 a {
@@ -17,17 +21,85 @@ a {
 }
 
 header {
-  height: 100vh;
-  background-color: lightblue;
+  height: calc(100vh - 40px);
+  background-color: black;
   position: relative;
+  color: transparent;
+  overflow: hidden;
+}
+
+.iconsBg {
+  height: 100%;
+  width: 100%;
+}
+
+.bg-svg {
+  width: 42px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 20px;
+  stroke: #ee7752;
+  stroke-width: 1;
+  -webkit-animation: change-bg 20s linear infinite;
+          animation: change-bg 20s linear infinite;
+}
+
+@-webkit-keyframes change-bg {
+  13% {
+    stroke: #ee7752;
+  }
+  25% {
+    stroke: #e73c7e;
+  }
+  37% {
+    stroke: #23a6d5;
+  }
+  50% {
+    stroke: #23d5ab;
+  }
+  62% {
+    stroke: #23d5ab;
+  }
+  75% {
+    stroke: #23a6d5;
+  }
+  87% {
+    stroke: #e73c7e;
+  }
+  100% {
+    stroke: #ee7752;
+  }
+}
+
+@keyframes change-bg {
+  13% {
+    stroke: #ee7752;
+  }
+  25% {
+    stroke: #e73c7e;
+  }
+  37% {
+    stroke: #23a6d5;
+  }
+  50% {
+    stroke: #23d5ab;
+  }
+  62% {
+    stroke: #23d5ab;
+  }
+  75% {
+    stroke: #23a6d5;
+  }
+  87% {
+    stroke: #e73c7e;
+  }
+  100% {
+    stroke: #ee7752;
+  }
 }
 
 .nav-transparent {
   background-color: transparent;
-}
-
-footer {
-  background-color: lightcoral;
 }
 
 nav {
@@ -45,11 +117,12 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   -webkit-animation: gradientBg 20s ease-in-out infinite;
           animation: gradientBg 20s ease-in-out infinite;
   font-size: 1em;
+  color: black;
 }
 
 nav p {
@@ -67,12 +140,15 @@ nav p {
           transform: translate(-50%, -50%);
   font-family: "Poiret One", cursive;
   font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .intro-text {
   text-align: center;
   font-size: 4em;
   font-weight: 300;
+  color: white;
+  padding: 10px;
 }
 
 .row2 {
@@ -126,10 +202,6 @@ nav p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   color: transparent;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 .portfolio-item {
@@ -137,10 +209,6 @@ nav p {
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   color: black;
-  -webkit-user-select: text;
-     -moz-user-select: text;
-      -ms-user-select: text;
-          user-select: text;
 }
 
 .portfolio-item img {
@@ -174,7 +242,7 @@ nav p {
       -ms-flex-align: center;
           align-items: center;
   text-shadow: 0px 2px 4px #2e2e2e;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   -webkit-animation: gradientBg 20s ease-in-out infinite;
           animation: gradientBg 20s ease-in-out infinite;
@@ -211,5 +279,15 @@ nav p {
   100% {
     background-position: 0% 50%;
   }
+}
+
+footer {
+  background-color: #000;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer svg {
+  stroke: #fff;
 }
 /*# sourceMappingURL=main.css.map */

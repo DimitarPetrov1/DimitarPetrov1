@@ -3,7 +3,7 @@
 // font-family: "Poiret One", cursive;
 // font-family: 'Montserrat', sans-serif;
 
-$base-gradient: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+$base-gradient: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 $margin-large: 3em;
 $margin-normal: 1em;
 $font-size: 1em;
@@ -17,6 +17,7 @@ $font-size: 1em;
 html {
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
+  user-select: none;
 }
 
 a {
@@ -24,17 +25,56 @@ a {
 }
 
 header {
-  height: 100vh;
-  background-color: lightblue;
+  height: calc(100vh - 40px);
+  background-color: rgb(0, 0, 0);
   position: relative;
+  color: transparent;
+  overflow: hidden;
+}
+
+.iconsBg {
+  height: 100%;
+  width: 100%;
+}
+
+.bg-svg {
+  width: 42px;
+  object-fit: cover;
+  margin: 20px;
+  stroke: #ee7752;
+  stroke-width: 1;
+  animation: change-bg 20s linear infinite;
+}
+
+@keyframes change-bg {
+  13% {
+    stroke: #ee7752;
+  }
+  25% {
+    stroke: #e73c7e;
+  }
+  37% {
+    stroke: #23a6d5;
+  }
+  50% {
+    stroke: #23d5ab;
+  }
+  62% {
+    stroke: #23d5ab;
+  }
+  75% {
+    stroke: #23a6d5;
+  }
+  87% {
+    stroke: #e73c7e;
+  }
+  100% {
+    stroke: #ee7752;
+  }
 }
 
 .nav-transparent {
   background-color: transparent;
-}
-
-footer {
-  background-color: lightcoral;
 }
 
 nav {
@@ -50,6 +90,7 @@ nav {
   background-size: 400% 400%;
   animation: gradientBg 20s ease-in-out infinite;
   font-size: $font-size;
+  color: black;
 
   p {
     margin: 20px 30px;
@@ -66,12 +107,15 @@ nav {
   transform: translate(-50%, -50%);
   font-family: "Poiret One", cursive;
   font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .intro-text {
   text-align: center;
   font-size: 4em;
   font-weight: 300;
+  color: rgb(255, 255, 255);
+  padding: 10px;
 }
 
 .row2 {
@@ -118,14 +162,12 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   color: transparent;
-  user-select: none;
 }
 
 .portfolio-item {
   margin: 10px;
   transition: all 0.2s ease-out;
   color: black;
-  user-select: text;
 
   img {
     height: 300px;
@@ -181,5 +223,14 @@ nav {
 
   100% {
     background-position: 0% 50%;
+  }
+}
+
+footer {
+  background-color: #000;
+  padding: 20px 0;
+  text-align: center;
+  svg {
+    stroke: #fff;
   }
 }
