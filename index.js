@@ -23,7 +23,7 @@ const projects = [
     cat: "ReactJS",
     name: "Gmail UI clone",
     img: "./images/gmail.jpg",
-    link: "https://ui-aa65d.web.app",
+    link: "https://pensive-shockley-3a67bf.netlify.app",
   },
   // {
   //   cat: "Javascript",
