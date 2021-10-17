@@ -5,56 +5,26 @@ const projects = [
     cat: "ReactJS",
     name: "Pizza builder",
     img: "./images/pizza.jpg",
-    link: "https://condescending-aryabhata-96601b.netlify.app",
+    link: "https://pizza-builder1.netlify.app",
   },
   {
     cat: "Javascript",
     name: "Weather forecast",
     img: "./images/weather.jpg",
-    link: "https://nervous-brown-01e67e.netlify.app",
+    link: "https://weather-forecaster-app1.netlify.app",
   },
   {
     cat: "ReactJS",
     name: "Weekly planner",
     img: "./images/planner.jpg",
-    link: "https://sleepy-shirley-a1802c.netlify.app",
+    link: "https://weekly-planner-app.netlify.app",
   },
   {
     cat: "ReactJS",
     name: "Gmail UI clone",
     img: "./images/gmail.jpg",
-    link: "https://pensive-shockley-3a67bf.netlify.app",
+    link: "https://gmial-ui-clone.netlify.app",
   },
-  // {
-  //   cat: "Javascript",
-  //   name: "project name",
-  //   img: "https://i.picsum.photos/id/616/300/300.jpg?hmac=eQKtU2fvqBbWzcZLd1QWT51Nm-Mro6VnR7UkUvM3LZQ",
-  // },
-  // {
-  //   cat: "Javascript",
-  //   name: "project name",
-  //   img: "https://i.picsum.photos/id/616/300/300.jpg?hmac=eQKtU2fvqBbWzcZLd1QWT51Nm-Mro6VnR7UkUvM3LZQ",
-  // },
-  // {
-  //   cat: "Javascript",
-  //   name: "project name",
-  //   img: "https://i.picsum.photos/id/616/300/300.jpg?hmac=eQKtU2fvqBbWzcZLd1QWT51Nm-Mro6VnR7UkUvM3LZQ",
-  // },
-  // {
-  //   cat: "React Native",
-  //   name: "project name",
-  //   img: "https://i.picsum.photos/id/616/300/300.jpg?hmac=eQKtU2fvqBbWzcZLd1QWT51Nm-Mro6VnR7UkUvM3LZQ",
-  // },
-  // {
-  //   cat: "ReactJS",
-  //   name: "project name",
-  //   img: "https://i.picsum.photos/id/616/300/300.jpg?hmac=eQKtU2fvqBbWzcZLd1QWT51Nm-Mro6VnR7UkUvM3LZQ",
-  // },
-  // {
-  //   cat: "ReactJS",
-  //   name: "project name",
-  //   img: "https://i.picsum.photos/id/616/300/300.jpg?hmac=eQKtU2fvqBbWzcZLd1QWT51Nm-Mro6VnR7UkUvM3LZQ",
-  // },
 ];
 
 const sortProjectsBtn = document.querySelectorAll(".sort-projects");
