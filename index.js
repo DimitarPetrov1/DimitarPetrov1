@@ -11,13 +11,13 @@ const projects = [
     cat: "Javascript",
     name: "Weather forecast",
     img: "./images/weather.jpg",
-    link: "https://digital-clock001.netlify.app",
+    link: "https://weather-forecaster-app1.netlify.app",
   },
     {
     cat: "Javascript",
     name: "Digital clock",
     img: "./images/clock.jpg",
-    link: "https://weather-forecaster-app1.netlify.app",
+    link: "https://digital-clock001.netlify.app",
   },
   {
     cat: "ReactJS",
