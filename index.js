@@ -1,5 +1,7 @@
 const portfolioItems = document.getElementById("portfolioItems");
 const iconsBg = document.getElementById("iconsBg");
+const toggleContactFormBtn = document.querySelector(".enquire-msg");
+const contactForm = document.querySelector(".contact-form");
 const projects = [
   {
     cat: "ReactJS",
@@ -13,7 +15,7 @@ const projects = [
     img: "./images/weather.jpg",
     link: "https://weather-forecaster-app1.netlify.app",
   },
-    {
+  {
     cat: "Javascript",
     name: "Digital clock",
     img: "./images/clock.jpg",
@@ -141,3 +143,11 @@ const addBg = () => {
 };
 
 addBg();
+
+toggleContactFormBtn.addEventListener("click", () => {
+  if (contactForm.style.display === "none") {
+    contactForm.style.display = "block";
+  } else {
+    contactForm.style.display = "none";
+  }
+});

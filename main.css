@@ -252,9 +252,10 @@ nav p {
   font-size: 1.5em;
 }
 
-.enquire-chat a {
-  font-size: 3em;
+.enquire-chat p {
+  font-size: 2em;
   color: #fff;
+  cursor: pointer;
 }
 
 @-webkit-keyframes gradientBg {
@@ -281,6 +282,10 @@ nav p {
   }
 }
 
+.container-fluid {
+  display: "none";
+}
+
 footer {
   background-color: #000;
   padding: 20px 0;
@@ -289,89 +294,5 @@ footer {
 
 footer svg {
   stroke: #fff;
-}
-
-.contact-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 3em 0;
-}
-
-.contact-form input,
-.contact-form textarea,
-.contact-form input[type="submit"] {
-  font-family: "Montserrat", sans-serif;
-  padding: 10px 20px;
-  border-radius: 6px;
-  border: 1px solid #000;
-}
-
-.contact-form input::-webkit-input-placeholder,
-.contact-form textarea::-webkit-input-placeholder,
-.contact-form input[type="submit"]::-webkit-input-placeholder {
-  text-align: center;
-}
-
-.contact-form input:-ms-input-placeholder,
-.contact-form textarea:-ms-input-placeholder,
-.contact-form input[type="submit"]:-ms-input-placeholder {
-  text-align: center;
-}
-
-.contact-form input::-ms-input-placeholder,
-.contact-form textarea::-ms-input-placeholder,
-.contact-form input[type="submit"]::-ms-input-placeholder {
-  text-align: center;
-}
-
-.contact-form input::placeholder,
-.contact-form textarea::placeholder,
-.contact-form input[type="submit"]::placeholder {
-  text-align: center;
-}
-
-.contact-form input {
-  width: 400px;
-  height: 3em;
-}
-
-.contact-form textarea {
-  width: 400px;
-  min-width: 200px;
-  max-width: 800px;
-  height: 200px;
-  min-height: 200px;
-  max-height: 800px;
-  border-bottom-right-radius: 0;
-}
-
-.contact-form input[type="submit"] {
-  width: 80px;
-  background-color: #000;
-  color: #fff;
-  cursor: pointer;
-}
-
-.response {
-  padding: 20px 0;
-}
-
-.response-success {
-  color: #00f300;
-}
-
-.response-fail {
-  color: red;
 }
 /*# sourceMappingURL=main.css.map */
